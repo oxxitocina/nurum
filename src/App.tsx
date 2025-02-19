@@ -80,8 +80,11 @@ function App() {
                   paddingBottom: "3rem",
                 }}
               >
-                <Text fz={"2rem"} style={{ color: "#503d05" }}>
-                  49
+                <Text
+                  fz={"2rem"}
+                  style={{ color: "#503d05", display: "block" }}
+                >
+                  49<br></br>
                 </Text>
 
                 <Image
@@ -91,6 +94,9 @@ function App() {
                   fit="contain"
                   pos={"absolute"}
                 />
+              </Center>
+              <Center>
+                <Text fz={"1.5rem"}>Мүшел жас</Text>
               </Center>
             </Animation>
           </Stack>
@@ -119,7 +125,7 @@ function App() {
                   paddingTop: "1rem",
                 }}
               >
-                Этот день будет для нас будет особенно важным. Поэтому мы хотим
+                Этот день будет для нас особенно важным. Поэтому мы хотим
                 провести его в кругу друзей и близких! <br></br>
                 <br></br>С большим удовольстивием приглашаем вас на юбилей!
               </Text>
