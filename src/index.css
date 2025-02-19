@@ -1,0 +1,6 @@
+body {
+  background-image: url("./assets/background.png");
+  overflow-x: hidden;
+  color: #846815;
+  font-family: "Playfair Display", serif;
+}
