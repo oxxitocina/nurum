@@ -1,0 +1,5 @@
+.textInput {
+  &::placeholder {
+    color: var(--mantine-color-red-5);
+  }
+}

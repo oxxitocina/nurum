@@ -8,16 +8,15 @@ import {
   Stack,
   Button,
   Divider,
-  Transition,
 } from "@mantine/core";
-import { Fade, Slide } from "react-awesome-reveal";
+
 import wreath from "./assets/wreath.png";
 import cream from "./assets/cream.png";
 import feather from "./assets/feather.png";
 import featherBig from "./assets/featherBigger.png";
 import flower from "./assets/flower.png";
 import { Animation } from "./common/animation";
-import { h3 } from "motion/react-m";
+import { GuestForm } from "./common/form";
 
 function App() {
   return (
@@ -160,7 +159,6 @@ function App() {
                 style={{
                   textAlign: "center",
                   display: "block",
-                  color: "#503d05",
                 }}
               >
                 ЖДЁМ ВАС:
@@ -171,7 +169,7 @@ function App() {
                 fz={"1.2rem"}
                 style={{
                   textAlign: "center",
-
+                  color: "#503d05",
                   display: "block",
                 }}
               >
@@ -183,7 +181,7 @@ function App() {
                 fz={"1.8rem"}
                 style={{
                   textAlign: "center",
-
+                  color: "#503d05",
                   display: "block",
                 }}
               >
@@ -195,6 +193,7 @@ function App() {
                 fz={"1.2rem"}
                 style={{
                   textAlign: "center",
+                  color: "#503d05",
                 }}
               >
                 Начало в 17:00
@@ -209,7 +208,7 @@ function App() {
                 td={"underline"}
                 style={{
                   textAlign: "center",
-                  color: "#503d05",
+
                   display: "block",
                 }}
               >
@@ -221,6 +220,7 @@ function App() {
                 fz={"1rem"}
                 style={{
                   textAlign: "center",
+                  color: "#503d05",
                 }}
               >
                 Город Петропавл, Улица Шоссе Кожаберген жырау, 39/5, Семейная
@@ -267,6 +267,36 @@ function App() {
           <Divider my="lg" style={{ borderColor: "#846815" }} />
 
           <Stack>
+            <Animation>
+              <Text
+                fz={"2rem"}
+                td={"underline"}
+                style={{
+                  textAlign: "center",
+
+                  display: "block",
+                }}
+              >
+                Ваше присутствие:
+              </Text>
+            </Animation>
+            <Animation>
+              <Text
+                fz={"1rem"}
+                style={{
+                  textAlign: "center",
+
+                  display: "block",
+                }}
+              >
+                Ваши ответы на вопросы помогут нам при организации свадьбы
+              </Text>
+            </Animation>
+
+            <Animation>
+              <GuestForm />
+            </Animation>
+
             <Animation>
               <Text
                 fz={"2rem"}
