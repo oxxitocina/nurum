@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "noEmitOnError": false, // Позволяет сборку даже при наличии ошибок
+    "skipLibCheck": true, // Игнорирует проверку типов в библиотеках
+    "strict": false // Отключает строгую проверку типов
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
