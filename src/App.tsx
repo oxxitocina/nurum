@@ -123,7 +123,7 @@ function App() {
 
                  ${searchParams.get("name1")} и ${searchParams.get("name2")}!`
                   : searchParams.size === 1
-                  ? `Дорогой 
+                  ? `Дорогой(-ая) 
 
                   ${searchParams.get("name1")}!`
                   : `Дорогие родные и друзья!`}
