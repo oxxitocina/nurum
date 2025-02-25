@@ -122,9 +122,11 @@ function App() {
                   ? `Дорогие 
 
                  ${searchParams.get("name1")} и ${searchParams.get("name2")}!`
-                  : `Дорогой 
+                  : searchParams.size === 1
+                  ? `Дорогой 
 
-                  ${searchParams.get("name1")}!`}
+                  ${searchParams.get("name1")}!`
+                  : `Дорогие родные и друзья!`}
               </Text>
             </Animation>
             <Divider my="lg" style={{ borderColor: "#846815" }} />
