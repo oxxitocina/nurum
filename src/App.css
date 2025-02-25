@@ -93,3 +93,13 @@
     left: -40vw;
   }
 }
+
+.audio_button {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #846815;
+  border-color: #846815;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -17,8 +17,13 @@ import featherBig from "./assets/featherBigger.png";
 import flower from "./assets/flower.png";
 import { Animation } from "./common/animation";
 import { GuestForm } from "./common/form";
+import { useSearchParams } from "react-router";
+import { AudioPlayer } from "./common/audio-player";
 
 function App() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams);
+
   return (
     <>
       <Container my="xs" pos="relative">
@@ -85,7 +90,7 @@ function App() {
                 >
                   49<br></br>
                 </Text>
-
+                ;
                 <Image
                   src={wreath}
                   h={150}
@@ -97,6 +102,9 @@ function App() {
               <Center>
                 <Text fz={"1.5rem"}>Мүшел жас</Text>
               </Center>
+              <Center>
+                <AudioPlayer />
+              </Center>
             </Animation>
           </Stack>
           <Box>
@@ -106,11 +114,17 @@ function App() {
                 style={{
                   textAlign: "center",
                   color: "#846815",
-                  display: "block",
+
                   paddingTop: "1rem",
                 }}
               >
-                Дорогие <br></br> родные и друзья!
+                {searchParams.size === 2
+                  ? `Дорогие 
+
+                 ${searchParams.get("name1")} и ${searchParams.get("name2")}!`
+                  : `Дорогой 
+
+                  ${searchParams.get("name1")}!`}
               </Text>
             </Animation>
             <Divider my="lg" style={{ borderColor: "#846815" }} />
@@ -307,14 +321,8 @@ function App() {
                   paddingTop: "1rem",
                 }}
               >
-                Ждём вас с нетерпением!
+                Ждём вас!
               </Text>
-            </Animation>
-
-            <Animation>
-              <Center style={{ paddingTop: "1rem" }}>
-                <Image src={flower} w="auto" fit="contain" h={"20vh"}></Image>
-              </Center>
             </Animation>
           </Stack>
         </Stack>
