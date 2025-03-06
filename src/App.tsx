@@ -212,7 +212,7 @@ function App() {
                   color: "#503d05",
                 }}
               >
-                Начало в 17:00
+                Начало в 16:00
               </Text>
             </Animation>
 
